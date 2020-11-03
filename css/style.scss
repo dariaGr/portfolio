@@ -1,0 +1,52 @@
+//<ПОДКЛЮЧЕНИЕ ШРИФТОВ>===========================================================================================
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap");
+
+$fontfamily: "Nunito Sans", sans-serif;
+
+// $minwidth: 320px;
+$minwidth: 375px;
+$mw: 1256;
+$md1: $mw + 12;
+$md2: 992.98;
+$md3: 767.98;
+$md4: 479.98;
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "_normalize.scss";
+//====================================================
+
+//</ОБОЛОЧКА>====================================
+// .wrapper {
+// 	width: 100%;
+// 	min-height: 100%;
+// 	overflow: hidden;
+// }
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+//=============================================
+.header {
+	background: url("../img/photo.jpg") center / cover no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.header__name {
+}
+.header__position {
+}
+.projects {
+}
+.projects__title {
+}

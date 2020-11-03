@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap");
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	position: relative;
+	width: 100%;
+	color: #000;
+}
+body {
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	font-family: "Nunito Sans", sans-serif;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+body.lock {
+   overflow: hidden;
+   }
+input,
+button,
+textarea {
+	font-family: "Nunito Sans", sans-serif;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+.header {
+	background: url("../img/photo.jpg") center / cover no-repeat;
+	height: 100%;
+	width: 100%;
+   position: relative;
+   z-index: 0;
+   padding-top: 23%;
+   padding-bottom: 10%;
+}
+.header::after {
+   content: "";
+   background-color: rgba(21, 15, 51, 0.795);
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+      width: 100%;
+      z-index: -1;
+}
+.header__name {
+   font-family: "Nunito Sans", sans-serif;
+   position: relative;
+   z-index: 5;
+   color: #fff;
+   font-size: 80px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+.header__position {
+    font-family: "Nunito Sans", sans-serif;
+   position: relative;
+   z-index: 5;
+   color: #fff;
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 70px;
+}
+.header__arrow {
+   display: block;
+   text-align: center;
+   position: relative;
+   animation: arrow 2s infinite ease;
+}
+@keyframes arrow {
+   0%{top: 0;}
+   50%{top: 20px;}
+   100%{top: 0;}
+}
+@-webkit-keyframes arrow {
+   0%{top: 0;}
+   50%{top: 20px;}
+   100%{top: 0;}
+}
+@-moz-keyframes arrow {
+   0%{top: 0;}
+   50%{top: 20px;}
+   100%{top: 0;}
+}
+@-o-keyframes arrow {
+   0%{top: 0;}
+   50%{top: 20px;}
+   100%{top: 0;}
+}
+.about {
+   padding-top: 70px;
+   padding-bottom: 50px;
+   background-color: #393939;
+   color: #C4C4C4;
+   line-height: 22px;
+}
+.about-title {
+   text-align: center;
+}
+.about__title {
+   font-family: "Yeseva One", sans-serif;
+   margin-bottom: 30px;
+   font-size: 28px;
+   color: #fff;
+   position: relative;
+   display: inline-block;
+}
+.about__title::after {
+   position: absolute;
+   content: "";
+   background-color: #fff;
+   height: 1px;
+   width: 100%;
+   top: 33px;
+   left: 0;
+
+}
+.about__skills {
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   margin-bottom: 50px;
+   display: inline-block;
+}
+.about__skills p {
+   line-height: 30px;
+   font-size: 22px;
+   text-align: left;
+}
+.js {
+   position: relative;
+}
+.js::after {
+   content: "60%";
+   background-color: #558BB8;
+   width: 240px;
+   position: absolute;
+   margin-left: 20px;
+   line-height: 26px;
+   border-radius: 3px;
+   text-align: center;
+}
+.html {
+   position:relative;
+}
+.html::after {
+   content: "90%";
+   background-color: #558BB8;
+   width: 400px;
+   position: absolute;
+   margin-left: 91px;
+   line-height: 26px;
+   border-radius: 3px;
+   text-align: center;
+}
+.css {
+   position: relative;
+}
+.css::after {
+   content: "75%";
+   background-color: #558BB8;
+   width: 315px;
+   position: absolute;
+   margin-left: 109px;
+   line-height: 26px;
+   border-radius: 3px;
+   text-align: center;
+}
+.about__row {
+   display: flex;
+   flex-wrap: wrap;
+}
+.about__column {
+   padding-left: 10%;
+   padding-right: 10%;
+   flex: 0 1 50%;
+   margin-bottom: 50px;
+   font-size: 22px;
+}
+.about__column p {
+   line-height: 30px;
+}
+.experience {
+   margin-bottom: 20px;
+}
+.education {
+   margin-bottom: 20px;
+}
+.education b {
+   color: #fff;
+}
+.projects {
+   background-color: rgb(31, 31, 31);
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.projects__title {
+   font-family: "Yeseva One", sans-serif;
+   color: #fff;
+   font-size: 50px;
+   text-align: center;
+   margin-bottom: 70px;
+}
+
+.footer {
+   background-color: #000;
+   text-align: center;
+   padding-top: 60px;
+   padding-bottom: 30px;
+}
+
+.footer__title {
+    font-family: "Yeseva One", sans-serif;
+   color: #fff;
+   font-size: 30px;
+   text-align: center;
+   margin-bottom: 60px;
+}
+.footer__row {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__column {
+	padding: 0px 80px;
+}
+
+.footer__item {
+	text-align: left;
+	margin: 0px 0px 3px 0px;
+}
+
+.footer__link {
+   color: #C6A017;
+   font-size: 18px;
+}
+
+.footer__link:hover {
+	color: #708076;
+	transition-duration: 0.3s;
+}
+
+.footer__post {
+	margin: 0px 0px 4px 0px;
+}
+
+.footer__icon {
+	position: relative;
+	top: 6px;
+	margin-right: 5px;
+}
+
+.slick-slider{
+	min-width: 0;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+
+.slider {
+	position: relative;
+	padding: 0px 60px;
+}
+
+@media (max-width:767px){
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+
+.slider .slick-arrow.slick-prev{
+	left: 15px;
+	background: url('../img/icons/arrow-l.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+	right: 15px;
+	background: url('../img/icons/arrow-r.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+
+.slider .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.slider__item {
+   text-align: center;
+   padding: 0px 15px;
+   margin-bottom: 40px;
+}
+.slider__item img{
+   width: 500px; 
+   height: 500px;
+   padding: 20px;
+}
+.slider__item p {
+   color: #fff;
+}
